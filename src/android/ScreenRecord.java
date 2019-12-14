@@ -141,7 +141,7 @@ public class ScreenRecord extends CordovaPlugin {
                }
                
                Log.d(TAG, "screenrecord service is running");
-               this.callbackContext.success("screenrecord service is running");
+               this.callbackContext.success("screenrecord service is running and save file path is " + file.getAbsolutePath());
                /*cordova.getActivity().moveTaskToBack(true); */
            }catch (Exception e){
               e.printStackTrace();
